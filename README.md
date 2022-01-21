@@ -32,4 +32,7 @@ When copying entrie directory to a bucket:
 ```
 gcloud alpha storage cp -r LOCAL_DIRECTORY gs://hebarium2022-blurred/
 ```
-
+Filtering files by size:
+```
+gsutil ls -l gs://your-bucket | awk '/gs:\/\// {if ($1 > 10000) {print $NF}}'
+```
