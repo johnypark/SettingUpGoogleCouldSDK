@@ -13,7 +13,7 @@ https://cloud.google.com/sdk/docs/quickstart
 5. Double-check with configuration:
 ``` gcloud config list```
 6. Connect to the shared project, in case something goes wrong:
-```gcloud logging buckets list mystical-accord-338912```
+```gcloud config set project mystical-accord-338912```
 7. Get a list of projects from google cloud:
 ``` gcloud projects list```
 8. Make sure that you are in a right account:
