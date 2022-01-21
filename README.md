@@ -43,3 +43,6 @@ Filtering files by size and list them all:
 gsutil ls -lh gs://{bucket} | sort -n -k 1
 ```
 https://stackoverflow.com/questions/66427813/is-there-a-way-to-find-all-files-objects-in-a-google-cloud-storage-bucket-larger
+
+
+https://cloud.google.com/storage/docs/gcs-fuse
