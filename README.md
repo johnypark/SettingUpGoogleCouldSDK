@@ -32,7 +32,14 @@ When copying entrie directory to a bucket:
 ```
 gcloud alpha storage cp -r LOCAL_DIRECTORY gs://hebarium2022-blurred/
 ```
-Filtering files by size:
+Filtering files by size, apply threshold to list files:
 ```
 gsutil ls -l gs://your-bucket | awk '/gs:\/\// {if ($1 > 10000) {print $NF}}'
+
 ```
+Filtering files by size and list them all:
+
+```
+gsutil ls -lh gs://{bucket} | sort -n -k 1
+```
+https://stackoverflow.com/questions/66427813/is-there-a-way-to-find-all-files-objects-in-a-google-cloud-storage-bucket-larger
